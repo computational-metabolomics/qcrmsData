@@ -5,6 +5,15 @@ Version: 0.99.0
 Author: Andris Jankevics
 Maintainer: Andris Jankevics <a.jankevics@bham.ac.uk>
 Description: This package contains subset of LC-MS data files in mzML format.
+    Subset of Thermo .Raw data files of MTBLS404 study from MetaboLights data
+    repository was downloaded on May 14, 2020. 36 data files were selected,
+    16 from batch 1 and 16 from batch 2. 12 QC samples are evenly distributed
+    across measured analytical batches and selected biological samples.
+    RAW data files were converted into mzML file format using msconvert tool
+    from Proteowizard suite v3.0.20134-da94b986e. Profile mode data were
+    centroided using msconvert peak picking filter and Vendor algorithm option.
+    Subset filter of the msconvert tool was used to subset spectra in the 
+    interval of 300 to 500 seconds.
 Suggests: 
     openxlsx,
     xcms,
