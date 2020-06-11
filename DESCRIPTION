@@ -1,0 +1,19 @@
+Package: qcrmsData
+Type: Package
+Title: Metabolomics data sets to demonstrate functionality of the qcrms package
+Version: 0.99.0
+Author: Andris Jankevics
+Maintainer: Andris Jankevics <a.jankevics@bham.ac.uk>
+Description: This package contains subset of LC-MS data files in mzML format.
+Suggests: 
+    openxlsx,
+    xcms,
+    testthat
+License: GPL
+Encoding: UTF-8
+LazyLoad: false
+LazyData: false
+biocViews: ExperimentData,MassSpectrometryData,ExperimentHub
+NeedsCompilation: no
+Depends: 
+    R (>= 4.0)

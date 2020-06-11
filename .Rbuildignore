@@ -1,0 +1,11 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.git$
+^\.Rhistory$
+LICENSE
+README.rst
+^\.travis\.yml$
+^codecov\.yml$
+.lintr
+NEWS
+^\.github$

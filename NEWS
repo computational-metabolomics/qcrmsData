@@ -1,0 +1,4 @@
+Changes 0.99.0 (Release date: 10-06-2020)
++ Added subset of mzML filed from MetaboLights data repository sudy MTBLS404.
++ Sample meta data form MTBLS404 study sample subset.
++ Added XCMS processing outputs for MTBLS404 study sample subset.
