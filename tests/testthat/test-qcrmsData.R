@@ -36,7 +36,7 @@ testthat::test_that("MTBLS404 mzML files", {
     mzml_files <- dir(system.file("extdata/MTBLS404/mzML",
         package="qcrmsData"))
     expect_equal(length(mzml_files), 36)
-    expect_equal(mzml_files, c("Blanc04.mzML", "Blanc04_b2.mzML",
+    expect_true(all(mzml_files %in% c("Blanc04.mzML", "Blanc04_b2.mzML",
         "Blanc08.mzML", "Blanc08_b2.mzML", "HU_neg_011_b2.mzML",
         "HU_neg_017.mzML", "HU_neg_028.mzML", "HU_neg_037.mzML",
         "HU_neg_039_b2.mzML", "HU_neg_044.mzML", "HU_neg_049.mzML",
@@ -47,5 +47,5 @@ testthat::test_that("MTBLS404 mzML files", {
         "HU_neg_195_b2.mzML", "QC1_001.mzML", "QC1_001_b2.mzML",
         "QC1_002.mzML", "QC1_002_b2.mzML", "QC1_003.mzML", "QC1_003_b2.mzML",
         "QC1_004.mzML", "QC1_004_b2.mzML", "QC1_005.mzML", "QC1_005_b2.mzML",
-        "QC1_006.mzML", "QC1_006_b2.mzML"))
+        "QC1_006.mzML", "QC1_006_b2.mzML")))
 })
