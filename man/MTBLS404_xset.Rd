@@ -15,7 +15,6 @@ Output was created using Bioconductor 3.11 and xcms 3.10.1 with code
 shown below.
 \preformatted{
 library(xcms)
-library(qcrms)
 
 mzml_files <- dir(system.file("extdata/MTBLS404/mzML", package="qcrmsData"),
     full.names=TRUE, recursive=TRUE)
