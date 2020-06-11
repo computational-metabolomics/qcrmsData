@@ -2,8 +2,8 @@ Package: qcrmsData
 Type: Package
 Title: Metabolomics data sets to demonstrate functionality of the qcrms package
 Version: 0.99.0
-Author: Andris Jankevics
-Maintainer: Andris Jankevics <a.jankevics@bham.ac.uk>
+Authors@R: person("Andris", "Jankevics", email = "a.jankevics@bham.ac.uk",
+    role = c("aut", "cre"))
 Description: This package contains subset of LC-MS data files in mzML format.
     Subset of Thermo .Raw data files of MTBLS404 study from MetaboLights data
     repository was downloaded on May 14, 2020. 36 data files were selected,
