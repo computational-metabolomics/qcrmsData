@@ -1,4 +1,4 @@
-# qrcmstData
+# qrcmsData
 
 R package containing metabolomics data sets to demonstrate functionality of the
 qcrms package.
@@ -39,15 +39,15 @@ subset spectra in the interval of 300 to 500 seconds.
 	#Sample meta data
 	meta_data <- openxlsx::readWorkbook(
     system.file("extdata/MTBLS404/MTBLS404_meta_data.xlsx",
-    package="qcrmsData"))
+        package="qcrmsData"))
 
 	raw_data <- readMSData(files=mzml_files,
-    pdata=new("NAnnotatedDataFrame", meta_data), mode="onDisk")
+        pdata=new("NAnnotatedDataFrame", meta_data), mode="onDisk")
 	cwp <- xcms::CentWaveParam(peakwidth = c(7, 30), ppm=8, mzdiff=0.013,
-    snthresh=10, noise=5000)
+        snthresh=10, noise=5000)
 	xdata <- xcms::findChromPeaks(raw_data, param=cwp)
 	xdata <- xcms::groupChromPeaks(xdata,
-    xcms::PeakDensityParam(sampleGroups=rep("S", 36), bw=5, binSize=0.01))
+        xcms::PeakDensityParam(sampleGroups=rep("S", 36), bw=5, binSize=0.01))
 	
 	# XCMS outputs are stored as data sets in qcrmsData as well
 	data(MTBLS404_xset) #S4 class xcmsSet object
